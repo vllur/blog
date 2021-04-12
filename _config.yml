@@ -1,0 +1,55 @@
+#----------------------------------------
+# GENERAL SETTINGS
+#----------------------------------------
+
+# Site title, appears in the browser tab.
+title: "vllur.github.io"
+
+# Site description in search engine.
+description: ""
+
+# Language settings for html and seo
+lang: "en_GB"
+iso-lang: "en"
+
+# Production url.
+url: "https://vllur.github.io"
+
+# Part after .com, etc. use / if none.
+baseurl: /blog/
+
+
+
+#----------------------------------------
+# CONTENT VARIABLES
+#----------------------------------------
+
+# Appears in first section and footer
+owner: "vllur"
+
+
+
+#----------------------------------------
+# JEKYLL SETTINGS
+#----------------------------------------
+
+# Takes files from root folder, generates site into ./_site.
+source: .
+destination: ./_site
+
+# Default variables for pages. Are in use if not overwritten.
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# Excluding dev gem builds from website.
+exclude: [vendor]
+
+# Jekyll plugins.
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
