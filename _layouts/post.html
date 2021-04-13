@@ -2,4 +2,15 @@
 layout: default
 ---
 
+<header class="post-header">
+  <h1>{{- page.title -}}</h1>
+  <time>{{ page.date | date: "%a, %b %d, %Y" }}</time>
+</header>
+
 {{ content }}
+
+
+{% if site.mathjax == true %}
+<script type="text/x-mathjax-config" src="{{- "assets/js/mathjax.js" | prepend: site.baseurl -}}"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+{% endif %}

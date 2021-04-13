@@ -18,6 +18,8 @@ url: "https://vllur.github.io"
 # Part after .com, etc. use / if none.
 baseurl: /blog/
 
+# Set to true to enable js MathJax
+mathjax: false
 
 
 #----------------------------------------
