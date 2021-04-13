@@ -2,8 +2,12 @@
 #
 ---
 
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&family=IBM+Plex+Serif:ital,wght@0,300;0,500;1,300;1,500&display=swap');
+
 @import "abstracts/variables";
 
 @import "base/base.scss";
+
+@import "vendor/monokai.scss";
 
 @import "abstracts/media.scss";

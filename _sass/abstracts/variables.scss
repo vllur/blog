@@ -1,1 +1,14 @@
- 
+// Colors
+$background: #39363f;
+
+$headline: #eccbbc;
+$paragraph: #949199;
+
+$primary: #946450;
+//$secondary: #946450;
+//$tertiary: #946450;
+
+// Links colors
+$color-link: $primary;
+$color-link-hover: $color-link;
+$color-link-active: lighten($color-link-hover, 5%);
