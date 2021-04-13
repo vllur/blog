@@ -1,0 +1,77 @@
+strong{
+  font-weight: 500;
+}
+
+pre, code{
+  font: 16px/1.5 'IBM Plex Mono', monospace;
+}
+
+pre{
+  padding: 1em;
+  background: darken($background, 2%);
+  box-shadow: 3px 3px darken($background, 5%);
+  border-left: 5px solid $primary;
+  border-radius: 2px;
+  overflow-x: auto;
+}
+
+.highlight .c1{
+  color: darken($paragraph, 15%);
+}
+
+blockquote{
+  padding: 0.5em 1em;
+  background: darken($background, 2%);
+  box-shadow: 3px 3px darken($background, 5%);
+  border-left: 5px solid $primary;
+  border-radius: 2px;
+
+  & p{
+    margin: 0.5em 0;
+  }
+}
+
+blockquote, pre.highlight{
+  margin: 1em;
+}
+
+table{
+  border-collapse: collapse;
+  margin: 1em;
+  background: darken($background, 2%);
+  width: calc(100% - 2em);
+
+  thead{
+    border-top: 5px solid $primary;
+  }
+
+  tr, td{
+    border-top: 1px $paragraph;
+  }
+
+  th, td{
+    padding: 0.4em;
+  }
+}
+
+img{
+  max-width: 100%;
+}
+
+.post-header{
+  display: flex;
+  flex-direction: column;
+
+  & h1{
+    margin: 2em 0;
+    font-size: 25px;
+    font-style: italic;
+    text-align: center;
+  }
+
+  & time{
+    margin-left: auto;
+    margin-bottom: 1.5em;
+    color: darken($paragraph, 30%);
+  }
+}
