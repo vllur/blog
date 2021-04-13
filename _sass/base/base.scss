@@ -9,7 +9,7 @@ body{
   margin: 0 auto;
   padding: 2em 1em;
   max-width: 600px;
-  min-height: 100vh;
+  min-height: calc(100vh - 4em);
 
   color: $paragraph;
   font: 17px/1.4 'IBM Plex Serif', serif;
