@@ -5,10 +5,8 @@ $headline: #eccbbc;
 $paragraph: #c7c7c7;
 
 $primary: #946450;
-//$secondary: #946450;
-//$tertiary: #946450;
 
 // Links colors
-$color-link: $primary;
+$color-link: lighten($primary, 8%);
 $color-link-hover: $color-link;
 $color-link-active: lighten($color-link-hover, 5%);
