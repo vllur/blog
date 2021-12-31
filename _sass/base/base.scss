@@ -12,13 +12,16 @@ body{
   min-height: calc(100vh - 4em);
 
   color: $paragraph;
-  font: 17px/1.4 'IBM Plex Serif', serif;
+  font: $serif;
   font-weight: 300;
-  font-size: 18px;
+}
+
+img{
+  max-width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6{
-  font-size: 21px;
+  font-size: 110%;
 
   font-weight: 300;
   margin: 1.5em 0 0;
@@ -39,5 +42,17 @@ a{
 
   &:active{
     color: $color-link-active;
+  }
+}
+
+.nav-list{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+
+  & li{
+    margin-right: 0.5em;
   }
 }

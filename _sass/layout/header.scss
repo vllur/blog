@@ -1,3 +1,23 @@
 header{
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+
+  & > a{
+    margin-right: 1em;
+    color: $headline !important;
+  }
+
+  & nav{
+      display: flex;
+      justify-content: left;
+    & ul{
+      padding: 0;
+      display: flex;
+      justify-content: left;
+
+      & li{
+        margin-right: 0.5em;
+      }
+    }
+  }
 }

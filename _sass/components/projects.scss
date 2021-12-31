@@ -1,0 +1,36 @@
+.project{
+  display: flex;
+  margin: 0 0 1.5em 0;
+
+  & p{
+    margin: 0.3em 0;
+  }
+
+  &-tags{
+    color: darken($paragraph, 30%);
+  }
+
+  & > img{
+    border: 5px solid darken($background, 2%);
+    border-radius: 5px;
+    width: 250px;
+    height: 250px;
+    display: block;
+    margin: 0 0.5em 0 0;
+  }
+
+  & > div{
+    & > h2{
+      margin: 0.1em 0 0.25em 0;
+    }
+  }
+}
+
+.project:nth-child(even){
+  flex-direction: row-reverse;
+  text-align: right;
+
+  & > img{
+    margin: 0 0 0 0.5em;
+  }
+}

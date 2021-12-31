@@ -10,5 +10,9 @@ nav{
 
   & > ul{
     padding: 0 0 0 1em;
+
+    & li:first-of-type h2{
+      margin: 0;
+    }
   }
 }
