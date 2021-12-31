@@ -26,9 +26,18 @@ mathjax: false
 # CONTENT VARIABLES
 #----------------------------------------
 
-# Appears in header
-owner: "vllur"
+# Posts, drafts and other collections in '_content' directory
+collections_dir: content
 
+# Projects collection
+collections:
+  projects:
+  img:
+    output: true
+    permalink: /:collection/:name
+
+# Appears in header.
+owner: "vllur"
 
 
 #----------------------------------------

@@ -1,5 +1,7 @@
 ---
-layout: default
+layout: post
+title: Home
+permalink: /
 ---
 
 <nav>
@@ -10,7 +12,7 @@ layout: default
       <h2>{{- year.name -}}</h2>
         <ul>
         {%- for post in year.items -%}
-          <li><a href="{{- post.url | prepend: site.baseurl -}}">{{- post.title -}}</a></li>
+          <li><a href="{{- post.url | relative_url -}}">{{- post.title -}}</a></li>
         {%- endfor -%}
         </ul>
     </li>
