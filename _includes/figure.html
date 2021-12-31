@@ -1,0 +1,6 @@
+<figure>
+  <a href="{{- include.src | prepend: 'img/' | relative_url  -}}">
+    <img src="{{- include.src | prepend: 'img/' | relative_url  -}}" alt="{{ include.alt }}" title="{{ include.title }}">
+  </a>
+  <figcaption>{{ include.figcaption }}</figcaption>
+</figure>

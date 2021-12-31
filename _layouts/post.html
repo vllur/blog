@@ -7,10 +7,11 @@ layout: default
   <time>{{ page.date | date: "%a, %b %d, %Y" }}</time>
 </header>
 
-{{ content }}
-
+<article class="post-content">
+  {{ content }}
+</article>
 
 {% if site.mathjax == true %}
-<script type="text/x-mathjax-config" src="{{- "assets/js/mathjax.js" | prepend: site.baseurl -}}"></script>
+<script type="text/x-mathjax-config" src="{{- 'assets/js/mathjax.js' | relative_url -}}"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 {% endif %}
