@@ -3,7 +3,7 @@
 #----------------------------------------
 
 # Site title, appears in the browser tab.
-title: "vllur.github.io"
+title: "vllur"
 
 # Site description in search engine.
 description: ""
@@ -13,7 +13,7 @@ lang: "en_GB"
 iso-lang: "en"
 
 # Production url.
-url: "https://vllur.github.io"
+url: "https://vllur.github.io/blog"
 
 # Part after .com, etc. use / if none.
 baseurl: /blog/
@@ -31,13 +31,15 @@ collections_dir: content
 
 # Projects collection
 collections:
-  projects:
   img:
     output: true
     permalink: /:collection/:name
 
 # Appears in header.
 author: "vllur"
+
+# Link to portfolio.
+portfolio: "https://vllur.github.io"
 
 
 #----------------------------------------
@@ -66,3 +68,5 @@ exclude: [vendor]
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-relative-links
+  - jekyll-feed

@@ -54,7 +54,7 @@ blockquote{
 }
 
 blockquote, pre.highlight{
-  margin: 1em;
+  margin: 1em 0;
 }
 
 table{
@@ -64,7 +64,11 @@ table{
   width: calc(100% - 2em);
 
   thead{
-    border-top: 5px solid $primary;
+    border-bottom: 5px solid $primary;
+  }
+
+  tr:nth-child(even){
+    background-color: lighten($background, 2%);
   }
 
   tr, td{
