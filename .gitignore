@@ -1,4 +1,4 @@
-vendor/bundle
+vendor
 .sass-cache/
 .jekyll-cache/
 .bundle/
