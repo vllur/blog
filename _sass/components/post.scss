@@ -6,7 +6,7 @@ code, pre{
   font: $mono;
 }
 
-p > code{
+p > code, li > code{
   padding: 0.05em 0.2em;
   background: darken($background, 4%);
   border-radius: 6px;
