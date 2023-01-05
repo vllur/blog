@@ -33,7 +33,7 @@ collections_dir: content
 collections:
   img:
     output: true
-    permalink: /:collection/:name
+    permalink: /:name
 
 # Appears in header.
 author: "vllur"

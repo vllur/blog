@@ -1,9 +1,9 @@
 
 <figure id="{{- include.id -}}">
-  <a href="{{- include.src | prepend: 'img/' | append: '.jpg' | relative_url  -}}" target="_blank">
+  <a href="{{- include.src | append: '.jpg' | relative_url  -}}" target="_blank">
     <picture>
-      <source srcset="{{- include.src | prepend: 'img/' | append: '.webp' | relative_url  -}}" type="image/webp">
-      <img src="{{- include.src | prepend: 'img/' | append: '.jpg' | relative_url  -}}" alt="{{ include.alt }}" draggable='false'>
+      <source srcset="{{- include.src | append: '.webp' | relative_url  -}}" type="image/webp">
+      <img src="{{- include.src | append: '.jpg' | relative_url  -}}" alt="{{ include.alt }}" draggable='false'>
     </picture>  
   </a>
   {% if include.link %}
