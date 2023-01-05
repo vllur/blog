@@ -1,8 +1,15 @@
 
-<figure>
-  <a href="{{- include.src | relative_url  -}}">
-    <img src="{{- include.src | relative_url  -}}" alt="{{ include.alt }}" title="{{ include.title }}">
+<figure id="{{- include.id -}}">
+  <a href="{{- include.src | prepend: 'img/' | append: '.jpg' | relative_url  -}}" target="_blank">
+    <picture>
+      <source srcset="{{- include.src | prepend: 'img/' | append: '.webp' | relative_url  -}}" type="image/webp">
+      <img src="{{- include.src | prepend: 'img/' | append: '.jpg' | relative_url  -}}" alt="{{ include.alt }}" draggable='false'>
+    </picture>  
   </a>
-  <figcaption>{{- include.figcaption -}}</figcaption>
+  {% if include.link %}
+  <figcaption><a href="{{- include.link -}}" target="_blank">{{ include.figcaption }}</a></figcaption>
+  {% else %}
+  <figcaption>{{ include.figcaption }}</figcaption>
+  {% endif %}
 </figure>
 

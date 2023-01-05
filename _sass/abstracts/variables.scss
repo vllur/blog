@@ -3,14 +3,15 @@ $serif: 20px/1.4 'IBM Plex Serif', serif;
 $mono: 90%/1.5 'IBM Plex Mono', monospace;
 
 // Colors
-$background: #39363f;
+$background: #39363F;
 
-$headline: #eccbbc;
-$paragraph: #c7c7c7;
+$headline: #ECCBBC;
+$paragraph: #DEDEDE;
 
-$primary: #946450;
+$primary: #AA7862;
 
 // Links colors
-$color-link: lighten($primary, 8%);
+$color-link: lighten($primary, 12%);
+$color-link-shadow: #000;
 $color-link-hover: $color-link;
 $color-link-active: lighten($color-link-hover, 5%);

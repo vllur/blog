@@ -6,6 +6,10 @@ nav{
     margin: 0;
     padding: 0;
     list-style-type: none;
+
+    .post-content & li{
+      margin: 0.1em 0;
+    }
   }
 
   & > ul{

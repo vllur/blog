@@ -33,6 +33,8 @@ a{
 
   &, &:visited{
     color: $color-link;
+    text-shadow: 1px 1px $color-link-shadow;
+    filter: saturate(135%);
   }
 
   &:hover{

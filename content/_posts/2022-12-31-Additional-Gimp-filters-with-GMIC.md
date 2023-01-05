@@ -13,7 +13,7 @@ Head to [gmic.eu/download](https://gmic.eu/download) and choose version for your
 Now you can launch a new window by navigating to `Filters` and `G'MIC-Qt...`.
 
 {%- include figure.html
-src="2022-12-31-Additional-Gimp-filters-with-GMIC-01.jpeg"
+src="2022-12-31-Additional-Gimp-filters-with-GMIC-01"
 alt="New Gimp window with additional effects to choose"
 title="G'MIC window"
 figcaption="G'MIC window" -%}
