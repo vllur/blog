@@ -6,7 +6,6 @@ permalink: /about/
 
 <ul class="nav-list">
   <li><a href="{{- site.github -}}">GitHub</a></li>
-  <li><a rel="me" href="{{- site.mastodon -}}">Mastodon</a></li>
   <li><a href="{{- site.linkedin -}}">LinkedIn</a></li>
 </ul>
 
